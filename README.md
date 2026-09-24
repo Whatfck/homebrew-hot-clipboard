@@ -5,6 +5,7 @@ Homebrew tap for [hot-clipboard](https://github.com/Whatfck/hot-clipboard) — a
 ## Install
 
 ```bash
+brew trust Whatfck/hot-clipboard
 brew tap Whatfck/hot-clipboard
 brew install hot-clipboard
 ```
@@ -14,6 +15,10 @@ Or in one line:
 ```bash
 brew install Whatfck/hot-clipboard/hot-clipboard
 ```
+
+> `brew trust` is required once: Homebrew refuses to load formulae from
+> third-party taps until you explicitly trust them. Without it you will get
+> `Error: Refusing to load formula ... from untrusted tap`.
 
 ## Usage
 
